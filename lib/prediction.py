@@ -3,7 +3,7 @@ from lib.distance.distance import *
 import numpy as np
 import sys
 
-def prediction(time_series, orig_r, orig_c, wind_r, wind_c):
+def prediction(time_series, orig_r, orig_c, wind_r, wind_c,distance_func):
   if(len(time_series)==1):
     return time_series[0]
   # Prepare and shape time series
@@ -57,4 +57,4 @@ def prediction(time_series, orig_r, orig_c, wind_r, wind_c):
   # print("the main array", main_series)
   # print("the mst simmiler array", mst_similar)
   # print("the forecast is ", mst_similar[-1])
-  return mst_similar['fast_dtw']
+  return mst_similar[distance_func]
