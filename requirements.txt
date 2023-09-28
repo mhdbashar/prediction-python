@@ -1,0 +1,8 @@
+fastdtw==0.3.4
+grpcio==1.48.2
+grpcio-tools==1.48.2
+numpy==1.19.5
+pkg-resources==0.0.0
+protobuf==3.19.6
+scipy==1.5.4
+six==1.16.0
